@@ -1,4 +1,7 @@
-angular.module('healthyGulpAngularApp', ['ui.router'])
+angular.module(
+    'BetslipPoc',
+    ['ui.router', 'Navigation']
+)
 
 .config(['$stateProvider', '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
@@ -9,6 +12,7 @@ angular.module('healthyGulpAngularApp', ['ui.router'])
 
             .state('home', {
                 url: '/',
+                controller: 'demoComponentController',
                 templateUrl: 'components/home.html'
             });
 
